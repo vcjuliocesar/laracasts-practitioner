@@ -3,7 +3,7 @@
   if(!function_exists('connectToDb')){
       function connectToDb(){
         try{
-          return new \PDO('mysql:host=localhost:3306;dbname=mytodos;','root','Jul10C3s4r');
+          return new \PDO('mysql:host=localhost:3306;dbname=mytodos;','root','');
         }catch(\PDOException $e){
           die($e->getMessage());
         }
